@@ -1,0 +1,11 @@
+{% extends 'coffee/base.html' %}
+
+{% block content %}
+
+    <h1>Coffee List</h1>
+
+    {% for coffee in coffees %}
+        {{ coffee.name }}<br/>
+    {% endfor %}
+
+{% endblock %}
